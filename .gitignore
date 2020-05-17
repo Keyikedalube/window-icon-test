@@ -1,2 +1,5 @@
-# ignore cmake build directory
-build-dir
+# ignore generated resource file
+window-icon-test.c
+
+# ignore executable file
+window-icon-test

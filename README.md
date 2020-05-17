@@ -6,11 +6,9 @@ A test project for fixing synfig issue https://github.com/synfig/synfig/issues/1
 git clone https://github.com/Keyikedalube/window-icon-test.git
 cd window-icon-test
 
-mkdir build-dir
-cd build-dir
+glib-compile-resources --generate-source window-icon-test.gresource.xml
 
-cmake ..
-make
+g++ main.cpp window-icon-test.c -o window-icon-test `pkg-config gtkmm-3.0 --cflags --libs`
 
 ./window-icon-test
 ```

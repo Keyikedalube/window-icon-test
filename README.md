@@ -14,3 +14,4 @@ make
 
 ./window-icon-test
 ```
+# \**This repo archived because test was already done*\*
